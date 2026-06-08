@@ -1,0 +1,8 @@
+name: atlas-billing-platform
+
+services:
+  phase-zero-placeholder:
+    image: alpine:3.22
+    command: ["sh", "-c", "echo Phase 0 has no infrastructure services yet"]
+    profiles:
+      - placeholder

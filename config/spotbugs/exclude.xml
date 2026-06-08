@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+  <!-- Add justified exclusions here. Keep this file small and reviewed. -->
+</FindBugsFilter>

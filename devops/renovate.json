@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "dependencyDashboard": true,
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["org.springframework.boot:spring-boot-dependencies"],
+      "labels": ["dependencies", "spring-boot", "needs-human-review"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackagePatterns": ["^org.hibernate", "^org.apache.kafka", "^org.postgresql"],
+      "labels": ["dependencies", "needs-human-review"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackagePatterns": [".*security.*", "^org.springframework.security"],
+      "labels": ["dependencies", "security", "needs-human-review"]
+    }
+  ]
+}
